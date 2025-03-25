@@ -595,10 +595,13 @@ def display_map_and_filtered_incidents_table():
                 if incident["id"] == 1:
                     incident["priority_score"] = 0.9
                     incident["crowdsource_event"]["alert_subtype"] = "Accident major"
+                    incident["crowdsource_event"]["timestamp"] = 1742904495
                 elif incident["id"] == 2:
                     incident["priority_score"] = 0.5
+                    incident["crowdsource_event"]["timestamp"] = 1742904500
                 else:
                     incident["priority_score"] = 0.1
+                    incident["crowdsource_event"]["timestamp"] = 1742904504
 
         hardcode_demo()
 
