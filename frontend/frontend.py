@@ -225,7 +225,8 @@ def bin_priority(score):
         return "Medium"
     else:
         return "Low"
-    
+
+
 # Displays details of a filtered incident
 def display_filtered_incident_details():
         incident = st.session_state["filtered"][st.session_state["selected_filtered"] - 1] # Retrieve specific incident checked. Minus one to account for overcounting due to the row of column headers being included

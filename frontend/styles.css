@@ -24,7 +24,7 @@ hr {
 /* Gradient Background */
 .stApp {
     background: linear-gradient(to bottom, #66b3ff, #b3e0ff); 
-    color: white;
+    color: #333333; /* Dark grey text for all MarkDowns i.e. trademark */
 }
 
 
@@ -32,7 +32,7 @@ hr {
 /* Button style: 3D */
 div.stButton > button {
     background-color: white; /* Solid White */
-    color: black; /* Black Text for Contrast */
+    color: #333333; /* Black Text for Contrast */
     font-size: 18px;
     padding: 12px 20px;
     border-radius: 8px;
@@ -52,20 +52,6 @@ div.stButton > button:active {
 }
 
 
-/* Dark grey text throughout */
-html, body, .stApp {
-    color: #333333 !important;
-}
-
-h1, h2, h3, h4, h5, h6, .stText, .stMarkdown, .stDataFrame, .stDataEditor {
-    color: #333333 !important;
-}
-
-div.stButton > button {
-    color: #333333 !important;
-}
-
-
 /* HEADER STYLES */
 /* st.title style */
 h1 {
@@ -80,7 +66,6 @@ h1 {
 }
 
 /* st.header style */
-/* TODO: padding top */
 h2 {
     color: #0056b3 !important;
     text-align: center;
@@ -153,6 +138,7 @@ h2 {
     border: 3px solid #0072ff !important; /* Blue border */
     border-radius: 12px !important; /* Rounded corners */
     padding: 10px !important;
+    margin-top: 20px;
     background: #f0f2f6 !important; /* Light grey background */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important; /* Soft shadow */    
 }
@@ -242,6 +228,7 @@ h2 {
 }
 
 
+/* Filtered Table Container */
 .st-key-filtered_cont {
     border: 3px solid #0072ff;
     border-radius: 12px !important;            /* Rounded corners */
@@ -249,9 +236,8 @@ h2 {
     background: #F0F2F6 !important;            /* Light background to contrast with table text */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15) !important; /* Soft shadow for depth */
     margin-top: 20px !important;
-    margin-bottom: 40px !important;
+    margin-bottom: 20px !important;
 }
-
 
 .st-key-filtered_incidents_editor {
     max-width: 100% !important;
@@ -268,14 +254,16 @@ h2 {
 
 }
 
+
+/* Validated Table Container */
 .st-key-validated_cont {
     border: 3px solid #0072ff;
     border-radius: 12px !important;            /* Rounded corners */
     padding: 25px !important;                  /* Inner spacing */
     background: #F0F2F6 !important;            /* Light background to contrast with table text */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15) !important; /* Soft shadow for depth */
-    margin-top: 20px !important;
-    margin-bottom: 40px !important;   
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;   
 }
 
 .st-key-validated_incidents_editor {
@@ -292,6 +280,8 @@ h2 {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* soft shadow */    
 }
 
+
+/* Incoming Table Container */
 .st-key-incoming_cont {
     border: 3px solid #0072ff;
     border-radius: 12px !important;            /* Rounded corners */
@@ -299,7 +289,7 @@ h2 {
     background: #F0F2F6 !important;            /* Light background to contrast with table text */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15) !important; /* Soft shadow for depth */
     margin-top: 20px !important;
-    margin-bottom: 40px !important;   
+    margin-bottom: 20px !important;   
 }
 
 .st-key-incoming_incidents_editor {
