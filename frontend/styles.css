@@ -228,7 +228,7 @@ h2 {
 }
 
 
-/* Filtered Table Container */
+/* FILTERED TABLE STYLES */
 .st-key-filtered_cont {
     border: 3px solid #0072ff;
     border-radius: 12px !important;            /* Rounded corners */
@@ -255,7 +255,7 @@ h2 {
 }
 
 
-/* Validated Table Container */
+/* VALIDATED TABLE STYLES */
 .st-key-validated_cont {
     border: 3px solid #0072ff;
     border-radius: 12px !important;            /* Rounded corners */
@@ -281,7 +281,7 @@ h2 {
 }
 
 
-/* Incoming Table Container */
+/* INCOMING TABLE STYLES */
 .st-key-incoming_cont {
     border: 3px solid #0072ff;
     border-radius: 12px !important;            /* Rounded corners */
