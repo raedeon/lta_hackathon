@@ -6,3 +6,6 @@
 
 # Ignore environment variable files
 .env
+
+# Ignore Privacy Enhanced Mail files
+lta_hackathon_pair.pem

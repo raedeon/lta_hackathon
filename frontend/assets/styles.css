@@ -227,6 +227,22 @@ h2 {
     margin-top: 5em; /* You can adjust this for vertical alignment */
 }
 
+/* Centralise validated dispatch button */
+.st-key-validated_dispatch_button {
+    display: block;
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 0; /* You can adjust this for vertical alignment */
+}
+
+/* Centralise validated back button */
+.st-key-validated_back_button {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 0; /* You can adjust this for vertical alignment */
+}
+
 
 /* FILTERED TABLE STYLES */
 .st-key-filtered_cont {
