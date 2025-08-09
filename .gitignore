@@ -1,0 +1,9 @@
+# Ignore virtual environments
+.venv/
+.lta_hackathon/
+
+# Ignore Python cache files
+**/__pycache__/**
+
+# Ignore environment variable files
+.env

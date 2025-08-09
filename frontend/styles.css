@@ -1,0 +1,317 @@
+/* MISCELLANEOUS STYLES */
+/* Hide Streamlit Menu (Deploy, Settings, etc.) */
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+footer {visibility: hidden;}
+
+/* Remove extra padding in Streamlit */
+.block-container {
+    padding-top: 0px !important;
+}
+
+/* Remove the red separator above tables and maps */
+hr {
+    display: none !important;
+}
+        
+/* Hide horizontal lines above tables */
+.stDataFrame, .stDataEditor {
+    border-top: none !important;
+}
+
+
+/* BACKGROUND STYLES */
+/* Gradient Background */
+.stApp {
+    background: linear-gradient(to bottom, #66b3ff, #b3e0ff); 
+    color: white;
+}
+
+
+/* BUTTON STYLES */
+/* Button style: 3D */
+div.stButton > button {
+    background-color: white; /* Solid White */
+    color: black; /* Black Text for Contrast */
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 4px 4px 0px rgba(211, 211, 211, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+
+div.stButton > button:hover {
+    transform: scale(1.05);
+    background-color: #F5F5F5; /* Light Grey on Hover */
+}
+
+div.stButton > button:active {
+    box-shadow: 2px 2px 0px rgba(211, 211, 211, 0.5);
+    transform: translateY(3px);
+}
+
+
+/* Dark grey text throughout */
+html, body, .stApp {
+    color: #333333 !important;
+}
+
+h1, h2, h3, h4, h5, h6, .stText, .stMarkdown, .stDataFrame, .stDataEditor {
+    color: #333333 !important;
+}
+
+div.stButton > button {
+    color: #333333 !important;
+}
+
+
+/* HEADER STYLES */
+/* st.title style */
+h1 {
+    background: #004488; /* linear-gradient(to right, #004488, #66a3ff); */ /* Deep Navy to Soft Blue */
+    color: white !important;
+    text-align: center;
+    font-size: 36px !important;
+    font-weight: bold !important;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* st.header style */
+/* TODO: padding top */
+h2 {
+    color: #0056b3 !important;
+    text-align: center;
+    font-size: 26px !important;
+    font-weight: bold;
+}
+
+/* TAB STYLES */
+/* Center the tabs */
+.stTabs [data-baseweb="tab-list"] {
+    display: flex;
+    justify-content: center; /* Centers the tabs horizontally */
+    background: none !important; /* Remove background */
+    padding: 10px;
+    padding-top: 0px; /* Remove top margin from tabs to merge with st.title*/
+    width: fit-content;
+    margin: auto; /* Ensures horizontal centering */
+    gap: 250px; /* Adds spacing between tabs */
+}
+
+/* Style the individual tabs */
+.stTabs [data-baseweb="tab"] {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    color: #333333 !important; /* Dark grey text */
+    padding: 12px 20px;
+    margin: 0 10px; /* Space between tabs */
+    background: #F0F2F6 !important; /* Light grey background */
+    border-radius: 0px 0px 8px 8px; /* Rounded top corners */
+    transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer !important; /* Ensures it's clickable */
+}
+
+/* Hover Effect */
+.stTabs [data-baseweb="tab"]:hover {
+    background: #E0E4EA !important; /* Slightly darker grey */
+    transform: scale(1.05);
+    color: #0072ff !important; /* Blue text on hover */
+}
+
+/* Active Tab */
+.stTabs [aria-selected="true"] {
+    background: #FFFFFF !important; /* White background for active tab */
+    color: #004488 !important; /* Dark blue text */
+    text-decoration: underline !important; /* Underline active tab */
+    font-weight: bold !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* Style the moving tab indicator */
+.stTabs [data-baseweb="tab-highlight"] {
+    background: linear-gradient(to right, #0072ff, #004488) !important; /* Gradient from light blue to dark blue */
+    height: 4px !important; /* Make it thicker */
+    border-radius: 0px 0px 8px 8px !important; /* Match tab rounding */
+    transition: all 0.3s ease-in-out !important; /* Smooth animation */
+    box-shadow: 0px 4px 6px rgba(0, 114, 255, 0.3) !important; /* Subtle glow */
+}
+
+/* Remove grey border under the tabs */
+.stTabs [data-baseweb="tab-border"] {
+    display: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+
+/* MAP STYLES */
+/* STYLE THE PYDECK MAP CONTAINER */
+.st-key-pydeck_map {
+    border: 3px solid #0072ff !important; /* Blue border */
+    border-radius: 12px !important; /* Rounded corners */
+    padding: 10px !important;
+    background: #f0f2f6 !important; /* Light grey background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important; /* Soft shadow */    
+}
+
+
+/* THEMED INCIDENT TABLE */
+.incident-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 18px;
+    text-align: center;
+    background-color: #ffffff;         /* White background for contrast */
+    border: 3px solid #0072ff;         /* Blue border to match theme */
+    border-radius: 12px;               /* Rounded corners */
+    overflow: hidden;                  /* Clip rounded corners for rows */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Header row */
+.incident-table th {
+    background-color: #004488;         /* Deep blue header */
+    color: white;
+    font-weight: bold;
+    padding: 14px;
+}
+
+/* Table cells */
+.incident-table td {
+    padding: 14px;
+    border-bottom: 1px solid #e0e0e0;  /* Light row divider */
+    color: #333333;                    /* Match global text colour */
+}
+
+
+/* Hover effect */
+.incident-table tr:hover {
+    background-color: #f0f2f6;         /* Match theme's light grey */
+    transition: background 0.2s ease-in-out;
+}
+
+/* Approve box */
+.st-key-approve {
+    border: 3px solid #0072ff !important; /* Blue border */
+    border-radius: 12px !important; /* Rounded corners */
+    padding: 15px !important;
+    background: #D6E4F0 !important; /* Light grey background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important; /* Soft shadow */
+    margin-top: 10px !important;
+}
+
+/* Centralise */
+.st-key-checkboxes {
+    width: 10;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Centralise approve button */
+.st-key-approve_button {
+    justify-content: center;
+    margin: auto;
+}
+
+/* Centralise reject button */
+.st-key-reject_button {
+    display: block;
+    margin-left: auto; /* Pushes the button as far to the right as the container allows. */
+    margin-right: 0;
+    margin-top: 5em;
+}
+
+/* Centralise back button */
+.st-key-back_button {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 5em; /* You can adjust this for vertical alignment */
+}
+
+/* Centralise dispatch button */
+.st-key-dispatch_button {
+    display: block;
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 5em; /* You can adjust this for vertical alignment */
+}
+
+
+.st-key-filtered_cont {
+    border: 3px solid #0072ff;
+    border-radius: 12px !important;            /* Rounded corners */
+    padding: 25px !important;                  /* Inner spacing */
+    background: #F0F2F6 !important;            /* Light background to contrast with table text */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15) !important; /* Soft shadow for depth */
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+}
+
+
+.st-key-filtered_incidents_editor {
+    max-width: 100% !important;
+    overflow-x: hidden !important; /* Prevent flickering scrollbars */
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 20px;
+    box-sizing: border-box !important;
+    /* 🔷 Border on all sides */
+    border: 3px solid black;         /* Matching your Streamlit blue */
+    border-radius: 12px;               /* Rounded corners for card-style look */
+    background-color: #FFFFFF;         /* contrast background */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
+
+}
+
+.st-key-validated_cont {
+    border: 3px solid #0072ff;
+    border-radius: 12px !important;            /* Rounded corners */
+    padding: 25px !important;                  /* Inner spacing */
+    background: #F0F2F6 !important;            /* Light background to contrast with table text */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15) !important; /* Soft shadow for depth */
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;   
+}
+
+.st-key-validated_incidents_editor {
+    max-width: 100% !important;
+    overflow-x: hidden !important; /* Prevent flickering scrollbars */
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 20px;
+    box-sizing: border-box !important;
+    /* 🔷 Border on all sides */
+    border: 3px solid black;         
+    border-radius: 12px;               /* Rounded corners for card-style look */
+    background-color: #FFFFFF;         /* contrast background */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* soft shadow */    
+}
+
+.st-key-incoming_cont {
+    border: 3px solid #0072ff;
+    border-radius: 12px !important;            /* Rounded corners */
+    padding: 25px !important;                  /* Inner spacing */
+    background: #F0F2F6 !important;            /* Light background to contrast with table text */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15) !important; /* Soft shadow for depth */
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;   
+}
+
+.st-key-incoming_incidents_editor {
+    max-width: 100% !important;
+    overflow-x: hidden !important; /* Prevent flickering scrollbars */
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 20px;
+    box-sizing: border-box !important;
+    /* 🔷 Border on all sides */
+    border: 3px solid black;         
+    border-radius: 12px;               /* Rounded corners for card-style look */
+    background-color: #FFFFFF;         /* contrast background */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* soft shadow */    
+}
