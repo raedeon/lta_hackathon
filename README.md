@@ -7,7 +7,7 @@
 
 **OptiMove AI™** is a full-stack incident management system designed to help traffic operators monitor, verify, and prioritise real-time traffic incidents. The system features an interactive dashboard that visualizes incidents on a map, live-updating tables, and an AI-powered backend for intelligent filtering and prioritization.
 
-[🎥 Watch the full 5-minute demo](thumbnail.jpg)(https://youtu.be/mWdMDd9snf4)  
+[🎥 Watch the full 5-minute demo](assets/thumbnail.jpg)(https://youtu.be/mWdMDd9snf4)  
 *(Click to see OptiMove AI in action)*
 
 ---
